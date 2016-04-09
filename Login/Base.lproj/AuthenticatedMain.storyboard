@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nso-87-XVK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="kgJ-MA-eHX">
+            <objects>
+                <viewController id="Nso-87-XVK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eB5-Zj-l5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMd-BH-ueM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gyj-vg-2iG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX7-pu-Qgk">
+                                <rect key="frame" x="297" y="358" width="30" height="30"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <segue destination="fYB-dg-oQ4" kind="modal" id="c3U-D3-aIe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGT-8R-5Qc">
+                                <rect key="frame" x="87" y="358" width="39" height="30"/>
+                                <state key="normal" title="Goals"/>
+                                <connections>
+                                    <segue destination="DqP-gj-5aC" kind="push" id="Tfs-E3-pjG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="generalassembly-open-graph.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fko-np-5DU">
+                                <rect key="frame" x="87" y="155" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paul's first app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv7-gt-a0V">
+                                <rect key="frame" x="151" y="126" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43457720534869915" green="1" blue="0.32833148896275721" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="vtr-RZ-fgi"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9B-Fv-TLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160" y="184"/>
+        </scene>
+        <!--Goals-->
+        <scene sceneID="RUU-vb-gJm">
+            <objects>
+                <viewController id="DqP-gj-5aC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aiC-5Z-4LX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7p4-bQ-Vl1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RAc-hW-wk0" userLabel="Goal">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1661583_735956036415379_786833290_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Ap-Wc-JPo">
+                                <rect key="frame" x="87" y="136" width="239" height="171"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My goal is to learn iOS developement to learn the fundamental skills for future iOS project management. " translatesAutoresizingMaskIntoConstraints="NO" id="HaI-Ru-hPO">
+                                <rect key="frame" x="86" y="313" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.13740807435136138" blue="0.10875622135456564" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I'd also like to create tools aiming at making life easier and solving social problems. " translatesAutoresizingMaskIntoConstraints="NO" id="q8T-M5-zoc">
+                                <rect key="frame" x="87" y="423" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.13740807435136138" blue="0.10875622135456564" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Goals" id="zT4-FF-1av">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="EqA-ci-jiw">
+                            <connections>
+                                <segue destination="fYB-dg-oQ4" kind="push" id="mfy-WE-fPT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3T-vM-TAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="-507"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="bca-0O-6ZO">
+            <objects>
+                <viewController id="fYB-dg-oQ4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Ib-Aq-uSq"/>
+                        <viewControllerLayoutGuide type="bottom" id="8F8-od-Obg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ij9-x0-01O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tt5-OM-OFl">
+                                <rect key="frame" x="96" y="222" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-D5-e2n">
+                                <rect key="frame" x="96" y="246" width="240" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">My name is Paul. I am a Christian. I've graduated from Swinburne University of Technology with a bachelor in commerce majoring in marketing. I am currently trying to get a job, however, I am also pursuing my entrepreneurial ambitions. I have 2 brothers. I am the middle child. Born and raised in Melbourne with a Hong Kong background. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="HL4-93-X7i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbH-Y4-Q0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="-507"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1661583_735956036415379_786833290_n.jpg" width="194" height="194"/>
+        <image name="generalassembly-open-graph.png" width="1200" height="630"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mfy-WE-fPT"/>
+    </inferredMetricsTieBreakers>
+</document>
